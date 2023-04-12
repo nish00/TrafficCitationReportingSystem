@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="938.0" minHeight="-Infinity" minWidth="938.0" prefHeight="660.0" prefWidth="938.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.tcrs.CitationController">
+   <children>
+      <SplitPane dividerPositions="0.09422492401215805" orientation="VERTICAL" prefHeight="660.0" prefWidth="938.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="60.0" minHeight="60.0" minWidth="0.0" prefHeight="60.0" prefWidth="160.0">
+               <children>
+                  <Pane maxHeight="60.0" minHeight="60.0" prefHeight="60.0" prefWidth="936.0" style="-fx-background-color: #001F6D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="368.0" layoutY="18.0" text="Issue New Citation" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.42505353319057815" layoutY="42.0" prefHeight="593.0" prefWidth="936.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="591.0" prefWidth="388.0">
+                          <Pane layoutY="50.0" prefHeight="602.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <children>
+                                  <Label layoutX="19.0" layoutY="41.0" text="First Name" />
+                                  <TextField fx:id="txtFirstName" layoutX="19.0" layoutY="61.0" prefHeight="38.0" prefWidth="353.0" promptText="First Name" />
+                                  <Label layoutX="19.0" layoutY="112.0" text="Last Name" />
+                                  <TextField fx:id="txtLastName" layoutX="19.0" layoutY="132.0" prefHeight="38.0" prefWidth="353.0" promptText="Last Name" />
+                                  <Label layoutX="19.0" layoutY="185.0" text="Date Of Birth" />
+                                  <DatePicker fx:id="txtDateOfBirth" layoutX="19.0" layoutY="203.0" prefHeight="38.0" prefWidth="223.0" />
+                                  <Label layoutX="269.0" layoutY="185.0" text="Age" />
+                                  <TextField fx:id="txtAge" layoutX="269.0" layoutY="204.0" prefHeight="38.0" prefWidth="102.0" promptText="Age" />
+                                  <Label layoutX="19.0" layoutY="251.0" text="Address 1" />
+                                  <TextField fx:id="txtAddress1" layoutX="19.0" layoutY="269.0" prefHeight="38.0" prefWidth="353.0" promptText="Address 1" />
+                                  <Label layoutX="19.0" layoutY="320.0" text="Address 2" />
+                                  <TextField fx:id="txtAddress2" layoutX="19.0" layoutY="338.0" prefHeight="38.0" prefWidth="353.0" promptText="Address 2" />
+
+                                  <Label layoutX="19.0" layoutY="388.0" text="City" />
+                                  <TextField fx:id="txtCity" layoutX="19.0" layoutY="405.0" prefHeight="38.0" prefWidth="353.0" promptText="City" />
+                                  <Label layoutX="19.0" layoutY="466.0" text="Province" />
+                                  <TextField fx:id="txtProvince" layoutX="20.0" layoutY="490.0" prefHeight="38.0" prefWidth="353.0" promptText="Province" />
+                                  <Label layoutX="319.0" layoutY="473.0" />
+                              </children>
+                          </Pane>
+                      </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Pane prefHeight="658.0" prefWidth="562.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label fx:id="errorLabel" layoutX="29.0" layoutY="9.0" prefHeight="32.0" prefWidth="491.0" text="Error occoured" visible="false" wrapText="true" />
+                                    <Label layoutX="30.0" layoutY="54.0" text="Vehicle Reg No / Driving License" />
+                                    <TextField fx:id="txtVehicleRegOrLicense" layoutX="30.0" layoutY="74.0" prefHeight="38.0" prefWidth="476.0" promptText="Vehicle Reg No / Driving License" />
+                                    <Label layoutX="30.0" layoutY="120.0" text="Citation Date" />
+                                    <DatePicker fx:id="txtCitationDate" layoutX="30.0" layoutY="139.0" prefHeight="38.0" prefWidth="223.0" promptText="Select Date" showWeekNumbers="true" />
+                                    <Label layoutX="30.0" layoutY="336.0" text="Fine Issued (CAD)" />
+                                    <TextField fx:id="txtFineIssued" layoutX="30.0" layoutY="355.0" prefHeight="38.0" prefWidth="223.0" promptText="Fine Issued eg 500" />
+                                    <Label layoutX="30.0" layoutY="189.0" text="Type Of Offense" />
+                                    <TextField fx:id="txtTypeOfOffense" layoutX="30.0" layoutY="207.0" prefHeight="38.0" prefWidth="476.0" promptText="Type of Offense eg Rash Driving" />
+                                    <Label layoutX="286.0" layoutY="336.0" text="Last Payment Date" />
+                                    <DatePicker fx:id="txtLastPaymentDate" layoutX="286.0" layoutY="355.0" prefHeight="38.0" prefWidth="180.0" promptText="Select Date" />
+
+                                    <Label layoutX="30.0" layoutY="257.0" text="Date of Offense" />
+                                    <DatePicker fx:id="txtDateOfOffense" layoutX="30.0" layoutY="276.0" prefHeight="38.0" prefWidth="223.0" promptText="Select Date" showWeekNumbers="true" />
+                                    <Label layoutX="31.0" layoutY="412.0" prefHeight="16.0" prefWidth="131.0" text="Remarks" />
+                                    <TextArea fx:id="txtRemarks" layoutX="29.0" layoutY="432.0" prefHeight="94.0" prefWidth="476.0" promptText="Enter Remarks" />
+
+                                     <Button fx:id="btnSaveAsWarrant" onAction="#saveAsWarrant" layoutX="31.0" layoutY="547.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="169.0" style="-fx-background-color: #8CB969;" text="Save As Warrant" textFill="WHITE">
+                                         <font>
+                                             <Font name="System Bold" size="13.0" />
+                                         </font>
+                                         <effect>
+                                             <DropShadow offsetY="2.0" radius="8.5" width="15.0">
+                                                 <color>
+                                                     <Color opacity="0.4000000059604645" />
+                                                 </color>
+                                             </DropShadow>
+                                         </effect>
+                                     </Button>
+                                     <Button fx:id="btnSaveAsCitation" onAction="#saveAsCitation" cancelButton="true" layoutX="327.0" layoutY="547.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #5E5E5E;" text="Proceed As Citation" textFill="WHITE">
+                                         <font>
+                                             <Font name="System Bold" size="13.0" />
+                                         </font>
+                                         <effect>
+                                             <DropShadow offsetY="2.0" radius="8.5" width="15.0">
+                                                 <color>
+                                                     <Color opacity="0.4000000059604645" />
+                                                 </color>
+                                             </DropShadow>
+                                         </effect>
+                                     </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

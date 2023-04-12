@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.tcrs.ProvincialAgencyController">
+   <children>
+      <Pane prefHeight="109.0" prefWidth="600.0" style="-fx-background-color: #001F6D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="mainLabel" layoutX="48.0" layoutY="14.0" prefHeight="41.0" prefWidth="538.0" text="TRAFFIC CITATION AND REPORTING SYSTEM" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="68.0" text="Provincial Agency" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="109.0" prefHeight="291.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="errorLabel" layoutX="159.0" layoutY="19.0" prefHeight="31.0" prefWidth="282.0" text="Invalid Login Details" textFill="#e80e0e" visible="false" />
+
+            <Label fx:id="lblUsername" layoutX="159.0" layoutY="68.0" text="Username" />
+            <TextField fx:id="txtUsername" text="johndoe" layoutX="159.0" layoutY="88.0" prefHeight="41.0" prefWidth="282.0" promptText="Username" />
+
+            <Label fx:id="lblPassword" layoutX="159.0" layoutY="146.0" text="Password" />
+            <TextField fx:id="txtPassword" text="1234" layoutX="159.0" layoutY="170.0" prefHeight="41.0" prefWidth="282.0" promptText="Password" />
+
+            <Button fx:id="btnLogin" defaultButton="true" layoutX="202.0" layoutY="226.0" mnemonicParsing="false" onAction="#login" prefHeight="41.0" prefWidth="196.0" style="-fx-background-color: #001F6D;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

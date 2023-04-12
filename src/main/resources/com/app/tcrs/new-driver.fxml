@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="com.app.tcrs.DriverController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="50.0" prefWidth="608.0" style="-fx-background-color: #001F6D;">
+         <children>
+            <Label layoutX="220.0" layoutY="13.0" text="Add New Driver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="602.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="errorLabel" layoutX="58.0" layoutY="9.0" prefHeight="32.0" prefWidth="325.0" text="Error occoured" visible="false" wrapText="true" />
+            <Label layoutX="58.0" layoutY="54.0" text="First Name" />
+            <TextField layoutX="58.0" layoutY="74.0" prefHeight="38.0" prefWidth="223.0" promptText="First Name" fx:id="txtFirstName" />
+            <Label layoutX="314.0" layoutY="54.0" text="Last Name" />
+            <TextField layoutX="314.0" layoutY="74.0" prefHeight="38.0" prefWidth="223.0" promptText="Last Name" fx:id="txtLastName" />
+            <Label layoutX="58.0" layoutY="125.0" text="Date Of Birth" />
+            <DatePicker layoutX="58.0" layoutY="143.0" prefHeight="32.0" prefWidth="223.0" fx:id="txtDateOfBirth" />
+            <Label layoutX="314.0" layoutY="120.0" text="Age" />
+            <TextField layoutX="314.0" layoutY="139.0" prefHeight="38.0" prefWidth="125.0" promptText="Age"  fx:id="txtAge"/>
+            <Label layoutX="58.0" layoutY="189.0" text="Address 1" />
+            <TextField layoutX="58.0" layoutY="207.0" prefHeight="38.0" prefWidth="476.0" promptText="Address 1" fx:id="txtAddress1" />
+            <Label layoutX="58.0" layoutY="260.0" text="Address 2" />
+            <TextField layoutX="58.0" layoutY="278.0" prefHeight="38.0" prefWidth="476.0" promptText="Address 2"  fx:id="txtAddress2"/>
+
+            <Label layoutX="58.0" layoutY="328.0" text="City" />
+            <TextField layoutX="58.0" layoutY="345.0" prefHeight="38.0" prefWidth="223.0" promptText="City"  fx:id="txtCity"/>
+            <Label layoutX="314.0" layoutY="328.0" text="Province" />
+            <TextField layoutX="314.0" layoutY="345.0" prefHeight="38.0" prefWidth="223.0" promptText="Province" fx:id="txtProvince" />
+            <Label layoutX="58.0" layoutY="404.0" text="Licence Number" />
+            <TextField layoutX="58.0" layoutY="422.0" prefHeight="38.0" prefWidth="476.0" promptText="License Number" fx:id="txtLicenseNumber"/>
+            <Label layoutX="63.0" layoutY="473.0" text="License Type" />
+            <TextField layoutX="63.0" layoutY="490.0" prefHeight="38.0" prefWidth="292.0" promptText="License Type" fx:id="txtLicenseType" />
+            <Label layoutX="319.0" layoutY="473.0" />
+            <Label layoutX="363.0" layoutY="471.0" text="Expiry Date" />
+            <DatePicker layoutX="363.0" layoutY="490.0" prefHeight="38.0" prefWidth="180.0"  fx:id="txtLicenseExpiryDate"/>
+            <Button fx:id="btnSaveDriver" onAction="#saveDriver" layoutX="76.0" layoutY="547.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: #8CB969;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="2.0" radius="8.5" width="15.0">
+                     <color>
+                        <Color opacity="0.4000000059604645" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="btnCancel" onAction="#quit" cancelButton="true" layoutX="349.0" layoutY="547.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: ff0000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="2.0" radius="8.5" width="15.0">
+                     <color>
+                        <Color opacity="0.4000000059604645" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

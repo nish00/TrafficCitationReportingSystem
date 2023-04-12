@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="com.app.tcrs.ApplicationController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="topPane" prefHeight="104.0" prefWidth="600.0" style="-fx-background-color: #001F6D;">
+         <children>
+            <Label id="mainLabel" fx:id="mainLabel" layoutX="90.0" layoutY="15.0" prefHeight="75.0" prefWidth="419.0" text="Traffic Citation and Reporting System(TCRS)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button id="btnQuit" fx:id="btnQuit" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#quit" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #FF0000; -fx-border-radius: 20px;" text="X" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="btnsPane" layoutY="104.0" prefHeight="296.0" prefWidth="600.0" style="-fx-background-color: #D9D9D9;">
+         <children>
+            <Button id="btnLawAgency" fx:id="btnLawAgency" layoutX="62.0" layoutY="118.0" mnemonicParsing="false" onAction="#openLawAgency" prefHeight="61.0" prefWidth="125.0" style="-fx-background-color: #8CB969;" text="Law Agency" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button id="btnProvincialAgency" fx:id="btnProvincialAgency" layoutX="215.0" layoutY="118.0" mnemonicParsing="false" onAction="#openProvincialAgency" prefHeight="61.0" prefWidth="170.0" style="-fx-background-color: #001F6D;" text="Provincial Agency" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button id="btnTrafficSchool" fx:id="btnTrafficSchool" layoutX="417.0" layoutY="118.0" mnemonicParsing="false" onAction="#openTrafficSchool" prefHeight="61.0" prefWidth="153.0" style="-fx-background-color: #5E5E5E;" text="Traffic School" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="247.0" layoutY="78.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
